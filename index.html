@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	
+
+	<title>Personal Portfolio</title>
+</head>
+<body>
+
+	<!-- Header -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+	  <a class="navbar-brand" href="#">Julius Saul</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto"> <!-- ml-auto - position links to the right hand side of the navbar -->
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#aboutme">About Me<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#gallery">Projects</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contactme">Contacts</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<!-- Landing Page -->
+	<section class="text-dark">
+		<div class="container-fluid landing-page d-flex flex-column justify-content-md-end jumbotron jumbotron-fluid">
+			<div class="container ml-md-2 text-center text-md-left">
+			  	<h1 class="display-3">Julius Victor Saul</h1>
+			  	<h3 class="ml-md-5">Welcome to my portfolio</p>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- Gallery -->
+	<div id="gallery" class="container-fluid">
+		<h1>Gallery</h1>
+		<div class="card-deck d-md-flex flex-lg-row flex-sm-column justify-content-center">
+			<div class="card mx-2 mb-sm-4">
+			  	<img class="card-img-top" src="./images/food-1.jpg">
+			  	<div class="card-body">
+			    	<p class="card-text">Balesin Breakfast.</p>
+			  	</div>
+			</div>
+
+			<div class="card mx-2 mb-sm-4">
+			  	<img class="card-img-top" src="./images/food-2.jpg">
+			  	<div class="card-body">
+			    	<p class="card-text">Sweet Ecstacy Burger.</p>
+			  	</div>
+			</div>
+
+			<div class="card mx-2 mb-sm-4">
+			  	<img class="card-img-top" src="./images/food-3.jpg">
+			  	<div class="card-body">
+			    	<p class="card-text">Popeyes Chicken.</p>
+			  	</div>
+			</div>
+
+			<div class="card mx-2 mb-sm-4">
+			  	<img class="card-img-top" src="./images/food-4.jpg">
+			  	<div class="card-body">
+			    	<p class="card-text">S&R Chicken Burger.</p>
+			  	</div>
+			</div>
+
+			<div class="card mx-2 mb-sm-4">
+			  	<img class="card-img-top" src="./images/food-5.jpg">
+			  	<div class="card-body">
+			    	<p class="card-text">Bad Bird Chicken Burger.</p>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- About Me -->
+	<div id="aboutme" class="about-me container-fluid">
+		<div class="about-me-box">
+			<h1>About Me</h1>
+			<div class="min-vh-100">
+				<img class="rounded-circle" id="profile-picture" src="./images/profile.jpg">
+			</div>
+			<h2>Julius Victor Saul</h2>
+			<h3 class="lead">Computer Engineering Student at FEU Institute of Technology</h3>
+			<h4 class="lead">Member of Computer Engineering Organization - FEU Institute of Technology.</h4>
+			<h2 class="lead">Zuitt Bootcamp Student</h2>
+			</p>
+		</div>
+	</div>
+
+	<!-- Contact -->
+	<div id="contactme" class="contact-me container-fluid">
+		<h2 class="pt-5 text-center">Contact Me</h2>
+		<div class="container-fluid col-md-4 pb-3 rounded" >
+			<form class="rounded">
+				<!-- Name -->
+				<div class="form-group px-2 pt-4">
+			    	<label for="exampleInputName">Name</label>
+			    	<input type="text" class="form-control" id="name" placeholder="Your Name">
+			    </div>
+
+			    <!-- Email -->
+			    <div class="form-group px-2">
+			    	<label for="exampleInputEmail">Email</label>
+			    	<input type="email" class="form-control" id="email" placeholder="name@example.com">
+			    </div>
+
+			    <!-- Contact Number -->
+				<div class="form-group px-2">
+			    	<label for="exampleInputContact">Contact Number</label>
+			    	<input type="text" class="form-control" id="name" placeholder="+63 900 000 0000">
+			    </div>
+
+			    <!-- Text Area -->
+			  	<div class="form-group px-2">
+			  	    <label for="exampleFormControlTextarea">Message</label>
+			  	    <textarea class="form-control" id="textarea" rows="8"></textarea>
+			  	 </div>
+
+			  	 <!-- Send Email Button -->
+			  	<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+
+			  	<div class="modal fade text" id="exampleModal" tabindex="-1" role="dialog">
+			  	  	<div class="modal-dialog" role="document">
+			  	    	<div class="modal-content">
+			  	      	<div class="modal-header">
+			  	        	<h5 class="modal-title">Thank You for contacting me!</h5>
+			  	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  	          		<span aria-hidden="true">&times;</span>
+			  	        	</button>
+			  	      	</div>
+			  	      	<div class="modal-body">
+			  	        	<p>Message Succesfully Sent</p>
+			  	      	</div>
+			  	      	<div class="modal-footer">
+			  	        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  	      	</div>
+			  	    	</div>
+			  	  	</div>
+			  	</div>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
